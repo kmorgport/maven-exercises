@@ -1,5 +1,8 @@
 import org.apache.commons.lang3.StringUtils;
 
+import java.sql.Connection;
+import java.sql.Driver;
+import java.sql.DriverManager;
 import java.util.Scanner;
 
 public class main {
@@ -14,6 +17,13 @@ public class main {
         }
         System.out.println(StringUtils.swapCase(test));
         System.out.println(StringUtils.reverse(test));
+
+//        DriverManager.registerDriver(new Driver());
+//        Connection connection = DriverManager.getConnection(
+//                "jdbc:mysql://localhost/codeup_test_db?serverTimezone=UTC&useSSL=false",
+//                "test",
+//                "test"
+//        );
 
     }
 }
